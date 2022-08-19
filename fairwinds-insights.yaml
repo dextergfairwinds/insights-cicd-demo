@@ -7,13 +7,13 @@ options:
       baseBranch: main
 
     # These images will be scanned for vulnerabilities
-    images:
+images:
       docker:
         - nginx:1.18-alpine
     #     - quay.io/dextertest/my-app:$CI_HASH
 
     # These manifests will be scanned for configuration issues
-    manifests:
+manifests:
       yaml:
         - ./deploy.yaml
       #   - ./main.deployment.yaml
