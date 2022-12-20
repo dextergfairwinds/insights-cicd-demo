@@ -22,3 +22,5 @@ manifests:
       #     path: ./deploy/chart
       #     values:
       #       foo: bar
+      
+      # sample yaml test file
