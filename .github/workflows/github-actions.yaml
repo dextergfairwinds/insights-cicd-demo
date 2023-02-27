@@ -14,9 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Fairwinds Settings
-      
-      - run: brew install FairwindsOps/tap/insights
-      - run: insights-cli push settings
+        run: |
+          brew install FairwindsOps/tap/insights
+          insights-cli push settings
 
   build:
     runs-on: ubuntu-latest
