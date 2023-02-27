@@ -8,14 +8,16 @@ on:
 
 jobs:
   settings:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     env:
       FAIRWINDS_TOKEN: ${{ secrets.FAIRWINDS_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - name: Fairwinds Settings
         run: |
+          brew update
           brew install FairwindsOps/tap/insights
+          brew upgrade
           insights-cli push settings
 
   build:
