@@ -12,7 +12,7 @@ jobs:
     env:
       FAIRWINDS_TOKEN: ${{ secrets.FAIRWINDS_TOKEN }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Fairwinds Settings
         run: |
           brew install FairwindsOps/tap/insights
@@ -23,7 +23,7 @@ jobs:
     env:
       FAIRWINDS_TOKEN: ${{ secrets.FAIRWINDS_TOKEN }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Fairwinds Insights
         run: |
           curl -L https://insights.fairwinds.com/v0/insights-ci-2.1.0.sh > insights-ci.sh
