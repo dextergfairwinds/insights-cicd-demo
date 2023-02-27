@@ -7,6 +7,16 @@ on:
   workflow_dispatch:
 
 jobs:
+  settings:
+    runs-on: ubuntu-latest
+    env:
+      FAIRWINDS_TOKEN: ${{ secrets.FAIRWINDS_TOKEN }}
+    steps:
+      - name: Fairwinds Settings
+      
+      - run: brew install FairwindsOps/tap/insights
+      - run: insights-cli push settings
+
   build:
     runs-on: ubuntu-latest
     env:
