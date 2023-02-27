@@ -11,4 +11,4 @@ checks:
     labelMissing:
       severity: high
   opa:
-    labelMissing: high        
+    labelMissing: high
