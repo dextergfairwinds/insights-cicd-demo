@@ -12,6 +12,7 @@ jobs:
     env:
       FAIRWINDS_TOKEN: ${{ secrets.FAIRWINDS_TOKEN }}
     steps:
+      - uses: actions/checkout@v2
       - name: Fairwinds Settings
       
       - run: brew install FairwindsOps/tap/insights
