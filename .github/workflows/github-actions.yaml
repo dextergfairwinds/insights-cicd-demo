@@ -15,9 +15,8 @@ jobs:
       - uses: actions/checkout@v3
       - name: Fairwinds Settings
         run: |
-          brew update
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           brew install FairwindsOps/tap/insights
-          brew upgrade
           insights-cli push settings
 
   build:
