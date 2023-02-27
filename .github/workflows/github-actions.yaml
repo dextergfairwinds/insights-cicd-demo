@@ -17,6 +17,7 @@ jobs:
         run: |
           /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
           brew install FairwindsOps/tap/insights
+          export FAIRWIND_TOKEN=${{ secrets.FAIRWINDS_TOKEN }}
           insights-cli push settings
 
   build:
