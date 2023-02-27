@@ -1,7 +1,6 @@
 options:
       organization: dextertest
-      hostname: https://insights.fairwinds.com
-      setExitCode: True
+      setExitCode: false
 
       # You may need to set this to 'main'
       baseBranch: main
@@ -22,3 +21,5 @@ manifests:
       #     path: ./deploy/chart
       #     values:
       #       foo: bar
+      
+      # sample yaml test file

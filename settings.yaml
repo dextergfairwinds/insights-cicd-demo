@@ -1,0 +1,14 @@
+checks:
+  polaris:
+    runAsRootAllowed:
+      severity: medium
+    livenessProbeMissing:
+      severity: high
+      ci:
+        block: true
+      admission:
+        block: false
+    labelMissing:
+      severity: high
+  opa:
+    labelMissing: high        
