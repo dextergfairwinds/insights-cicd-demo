@@ -15,7 +15,7 @@ images:
 manifests:
       yaml:
         - ./deploy.yaml
-        - ./nginx.yaml
+      # - ./nginx.yaml
       #   - ./main.deployment.yaml
       # helm:
       #   - name: prod
